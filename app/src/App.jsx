@@ -10,13 +10,22 @@ function App() {
         </div>
       </section>
       <hr />
+      <section className="about">
+        <div className="container">
+          <h3>About</h3>
+          <p>I can&apos;t stop, won&apos;t stop:</p>
+          <p>coding in JavaScript</p>
+        </div>
+      </section>
+      <hr />
       <section className="social">
         <div className="container">
-          <h3>Connect with me</h3>
+          <h3>Connect</h3>
           <p>Github:</p>
           <p>LinkedIn:</p>
         </div>
       </section>
+      <hr />
     </>
   )
 }
