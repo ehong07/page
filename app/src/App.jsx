@@ -20,8 +20,8 @@ function App() {
       <section className="social">
         <div className="container">
           <h3>Connect</h3>
-          <p>Github:</p>
-          <p>LinkedIn:</p>
+          <p>Github: @ehong07</p>
+          <p>LinkedIn: @easakhong</p>
         </div>
       </section>
       <hr />
