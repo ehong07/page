@@ -1,15 +1,23 @@
-import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="container">
-      <h1 className="hero">Hello world!</h1>
-      <p>My name is Easak and I'm a full-stack engineer based in San Francisco</p>
+    <>
+      <section className="hero">
+        <div className="container">
+          <h1 className="greeting">Hello world!</h1>
+          <p>My name is Easak and I&apos;m a full-stack engineer based in San Francisco.</p>
+        </div>
+      </section>
       <hr />
-    </div>
+      <section className="social">
+        <div className="container">
+          <h3>Connect with me</h3>
+          <p>Github:</p>
+          <p>LinkedIn:</p>
+        </div>
+      </section>
+    </>
   )
 }
 
