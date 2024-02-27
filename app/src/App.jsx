@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <div className="layout">
       <section className="hero">
         <div className="container">
           <h1 className="greeting">Hello world!</h1>
@@ -13,8 +13,7 @@ function App() {
       <section className="about">
         <div className="container">
           <h3>About</h3>
-          <p>I can&apos;t stop, won&apos;t stop:</p>
-          <p>coding in JavaScript</p>
+          <p>I like JavaScript</p>
         </div>
       </section>
       <hr />
@@ -26,7 +25,7 @@ function App() {
         </div>
       </section>
       <hr />
-    </>
+    </div>
   )
 }
 
