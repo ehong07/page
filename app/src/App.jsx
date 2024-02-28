@@ -6,6 +6,8 @@ function App() {
       <section className="hero">
         <div className="container">
           <h1 className="greeting">Hello world!</h1>
+        </div>
+        <div className="container">
           <p className="text">My name is Easak and I&apos;m a full-stack engineer based in San Francisco.</p>
         </div>
       </section>
