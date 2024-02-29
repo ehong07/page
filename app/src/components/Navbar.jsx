@@ -9,7 +9,7 @@ function Navbar() {
         </ul>
         <ul>
           <li><a href="#" className="contrast">Test</a></li>
-          <li><button className="contrast">Contact</button></li>
+          <li><a href="#" className="contrast">Contact</a></li>
         </ul>
       </nav>
     </header>
