@@ -22,8 +22,14 @@ function App() {
       <section className="social">
         <div className="container">
           <h3 className="title">Connect</h3>
-          <p className="text">Github: @ehong07</p>
-          <p className="text">LinkedIn: @easakhong</p>
+          <p className="text">
+            Github:&nbsp;
+            <a target="_blank" href="https://github.com/ehong07">@ehong07</a>
+          </p>
+          <p className="text">
+            LinkedIn:&nbsp;
+            <a target="_blank" href="https://linkedin.com/in/easakhong">@easakhong</a>
+          </p>
         </div>
       </section>
       <hr />
