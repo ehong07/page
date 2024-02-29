@@ -23,7 +23,7 @@ function App() {
         <div className="container">
           <h3 className="title">Connect</h3>
           <p className="text">
-            Github:&nbsp;
+            GitHub:&nbsp;
             <a target="_blank" href="https://github.com/ehong07">@ehong07</a>
           </p>
           <p className="text">
