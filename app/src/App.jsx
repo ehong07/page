@@ -1,13 +1,11 @@
+import Picture from './components/Picture';
 import './App.css';
-import myPicture from './assets/sp.png';
 
 function App() {
   return (
     <div className="layout">
       <section className="hero">
-        <div className="container">
-          <img src={myPicture} className="picture" />
-        </div>
+        <Picture />
         <div className="container">
           <h1 className="greeting">Hello, world!</h1>
         </div>
@@ -41,4 +39,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
