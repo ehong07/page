@@ -8,8 +8,11 @@ function Navbar() {
           <li className="name"><strong>Easak Hong</strong></li>
         </ul>
         <ul>
-          <li><a href="#" className="contrast">Test</a></li>
-          <li><a href="mailto:easakhong@gmail.com" className="contrast">Contact</a></li>
+          <li>
+            <a href="mailto:easakhong@gmail.com" className="contrast">
+              <strong>Contact</strong>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
