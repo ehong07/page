@@ -1,4 +1,5 @@
 import './App.css';
+import myPicture from './assets/sp.png';
 
 function App() {
   return (
@@ -8,17 +9,20 @@ function App() {
           <h1 className="greeting">Hello world!</h1>
         </div>
         <div className="container">
+          <img src={myPicture} className="picture" />
+        </div>
+        <div className="container">
           <p className="text">My name is Easak and I&apos;m a full-stack engineer based in San Francisco.</p>
         </div>
       </section>
-      <hr />
+      <hr className="linebreak" />
       <section className="about">
         <div className="container">
           <h3 className="title">About</h3>
           <p className="text">I like JavaScript</p>
         </div>
       </section>
-      <hr />
+      <hr className="linebreak" />
       <section className="social">
         <div className="container">
           <h3 className="title">Connect</h3>
@@ -32,7 +36,7 @@ function App() {
           </p>
         </div>
       </section>
-      <hr />
+      <hr className="linebreak" />
     </div>
   )
 }

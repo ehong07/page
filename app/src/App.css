@@ -5,9 +5,9 @@
   /* text-align: center; */
 }
 
-/* .greeting {
-  padding: 1.5em 1.5em 0.5em;
-} */
+.greeting {
+  padding-left: 3em;
+}
 
 .hero {
   margin-left: 21em;
@@ -27,6 +27,16 @@
 
 .title {
   color: #FFFFFF;
+}
+
+.picture {
+  height: 30em;
+  padding: 0 0 1.5em 1.5em;
+}
+
+.linebreak {
+  width: 75%;
+  margin-left: 10em;
 }
 
 /* .logo {
