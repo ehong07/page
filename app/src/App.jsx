@@ -9,7 +9,11 @@ function App() {
         <Picture />
         <Typewriter text="Hello, world!" delay={100} />
         <div className="container">
-          <p className="text">My name is Easak and I&apos;m a full-stack engineer based in San Francisco.</p>
+          <h5 className="text">My name is&nbsp;
+            <span style={{ color: '#FFC72C' }}>Easak</span>
+            &nbsp;and I&apos;m a full-stack engineer based in&nbsp;
+            <span style={{ color: '#00A9E0' }}>San Francisco</span>.
+          </h5>
         </div>
       </section>
       <hr className="linebreak" />
