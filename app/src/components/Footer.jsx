@@ -6,13 +6,13 @@ function Footer() {
       <div className="container">
         <p>
           Made in SF with&nbsp;
-            <a target="_blank" href="https://bun.sh/">Bun</a>
+            <a target="_blank" href="https://bun.sh/" className="contrast">Bun</a>
             ,&nbsp;
-            <a target="_blank" href="https://picocss.com/">Pico</a>
+            <a target="_blank" href="https://picocss.com/" className="contrast">Pico</a>
             ,&nbsp;
-            <a target="_blank" href="https://react.dev/">React</a>
+            <a target="_blank" href="https://react.dev/" className="contrast">React</a>
             , and&nbsp;
-            <a target="_blank" href="https://vitejs.dev/">Vite</a>
+            <a target="_blank" href="https://vitejs.dev/" className="contrast">Vite</a>
             .
         </p>
       </div>
