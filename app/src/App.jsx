@@ -1,4 +1,5 @@
 import Picture from './components/Picture';
+import Typewriter from './components/Typewriter';
 import './App.css';
 
 function App() {
@@ -6,9 +7,7 @@ function App() {
     <div className="layout">
       <section className="section">
         <Picture />
-        <div className="container">
-          <h1 className="greeting">Hello, world!</h1>
-        </div>
+        <Typewriter text="Hello, world!" delay={100} />
         <div className="container">
           <p className="text">My name is Easak and I&apos;m a full-stack engineer based in San Francisco.</p>
         </div>
