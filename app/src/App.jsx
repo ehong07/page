@@ -6,10 +6,10 @@ function App() {
     <div className="layout">
       <section className="hero">
         <div className="container">
-          <h1 className="greeting">Hello, world!</h1>
+          <img src={myPicture} className="picture" />
         </div>
         <div className="container">
-          <img src={myPicture} className="picture" />
+          <h1 className="greeting">Hello, world!</h1>
         </div>
         <div className="container">
           <p className="text">My name is Easak and I&apos;m a full-stack engineer based in San Francisco.</p>

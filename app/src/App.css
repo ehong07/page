@@ -5,9 +5,9 @@
   /* text-align: center; */
 }
 
-.greeting {
+/* .greeting {
   padding-left: 3em;
-}
+} */
 
 .hero {
   margin-left: 21em;
@@ -30,8 +30,9 @@
 }
 
 .picture {
-  height: 30em;
-  padding: 0 0 1.5em 1.5em;
+  height: 10em;
+  /* padding: 0 0 1.5em 1.5em; */
+  padding-bottom: 1.5em;
 }
 
 .linebreak {
