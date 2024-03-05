@@ -6,7 +6,7 @@ function App() {
     <div className="layout">
       <section className="hero">
         <div className="container">
-          <h1 className="greeting">Hello world!</h1>
+          <h1 className="greeting">Hello, world!</h1>
         </div>
         <div className="container">
           <img src={myPicture} className="picture" />
