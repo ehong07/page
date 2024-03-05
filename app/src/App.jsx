@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="layout">
-      <section className="hero">
+      <section className="section">
         <Picture />
         <div className="container">
           <h1 className="greeting">Hello, world!</h1>
@@ -14,16 +14,16 @@ function App() {
         </div>
       </section>
       <hr className="linebreak" />
-      <section className="about">
+      <section className="section">
         <div className="container">
-          <h3 className="title">About</h3>
+          <h3 className="text">About</h3>
           <p className="text">I like JavaScript</p>
         </div>
       </section>
       <hr className="linebreak" />
-      <section className="social">
+      <section className="section">
         <div className="container">
-          <h3 className="title">Connect</h3>
+          <h3 className="text">Connect</h3>
           <p className="text">
             GitHub:&nbsp;
             <a target="_blank" href="https://github.com/ehong07">@ehong07</a>

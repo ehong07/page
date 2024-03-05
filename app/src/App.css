@@ -8,24 +8,11 @@
 /* .greeting {
   padding-left: 3em;
 } */
-
-.hero {
-  margin-left: 21em;
-}
-
-.about {
-  margin-left: 21em;
-}
-
-.social {
+.section {
   margin-left: 21em;
 }
 
 .text {
-  color: #FFFFFF;
-}
-
-.title {
   color: #FFFFFF;
 }
 
