@@ -11,7 +11,9 @@ function App() {
         <div className="container">
           <h5 className="text">My name is&nbsp;
             <span style={{ color: '#FFC72C' }}>Easak</span>
-            &nbsp;and I&apos;m a full-stack engineer based in&nbsp;
+            &nbsp;and I&apos;m a&nbsp;
+            <span style={{ color: '#FFB3C7' }}>software engineer</span>
+            &nbsp;based in&nbsp;
             <span style={{ color: '#00A9E0' }}>San Francisco</span>.
           </h5>
         </div>
