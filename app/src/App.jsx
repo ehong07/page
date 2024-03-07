@@ -4,12 +4,18 @@ import Introduction from './components/Introduction';
 import About from './components/About';
 import './App.css';
 
+const TEXTS = [
+  'Hello, world!',
+  'Welcome to my small slice of the internet pie!',
+  'Thanks for stopping by!',
+];
+
 function App() {
   return (
     <div className="layout">
       <section className="section">
         <Picture />
-        <Typewriter text="Hello, world!" delay={100} />
+        <Typewriter words={TEXTS} />
         <Introduction />
       </section>
       <hr className="linebreak" />

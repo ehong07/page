@@ -1,31 +1,40 @@
 import { useState, useEffect } from 'react';
 import { PropTypes } from 'prop-types';
 
-function Typewriter({ text, delay }) {
-  const [currentText, setCurrentText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
+function Typewriter({ words }) {
+  const [wordIndex, setWordIndex] = useState(0);
+  const [text, setText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  function type() {
+    const currentWord = words[wordIndex];
+    const shouldDelete = isDeleting ? 1 : -1;
+
+    setText(current => currentWord.substring(0, current.length - shouldDelete));
+
+    if (!isDeleting && text === currentWord) {
+      setTimeout(() => setIsDeleting(true), 500);
+    } else if (isDeleting && text === '') {
+      setIsDeleting(false);
+      setWordIndex((current) => (current + 1) % words.length);
+    }
+  }
 
   useEffect(() => {
-    if (currentIndex < text.length) {
-      const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
-      }, delay);
+    const timeout = setTimeout(type, isDeleting ? 50 : 100);
 
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, delay, text]);
+    return () => clearTimeout(timeout);
+  }, [wordIndex, isDeleting, text]);
 
   return (
     <div className="container">
-      <h1>{currentText}</h1>
+      <h1>{text}</h1>
     </div>
   );
 }
 
 Typewriter.propTypes = {
-  text: PropTypes.string.isRequired,
-  delay: PropTypes.number.isRequired,
+  words: PropTypes.array.isRequired,
 }
 
 export default Typewriter;
