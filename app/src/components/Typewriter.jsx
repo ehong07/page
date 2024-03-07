@@ -22,7 +22,6 @@ function Typewriter({ words }) {
     }
 
     const timeout = setTimeout(type, isDeleting ? 50 : 100);
-
     return () => clearTimeout(timeout);
   }, [words, wordIndex, isDeleting, text]);
 
