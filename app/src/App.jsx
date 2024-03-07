@@ -1,6 +1,7 @@
 import Picture from './components/Picture';
 import Typewriter from './components/Typewriter';
 import Introduction from './components/Introduction';
+import About from './components/About';
 import './App.css';
 
 function App() {
@@ -13,10 +14,7 @@ function App() {
       </section>
       <hr className="linebreak" />
       <section className="section">
-        <div className="container">
-          <h3 className="text">About</h3>
-          <p className="text">I like JavaScript</p>
-        </div>
+        <About />
       </section>
       <hr className="linebreak" />
       <section className="section">
