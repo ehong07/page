@@ -6,25 +6,25 @@ function Typewriter({ words }) {
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
-  function type() {
-    const currentWord = words[wordIndex];
-    const shouldDelete = isDeleting ? 1 : -1;
-
-    setText(current => currentWord.substring(0, current.length - shouldDelete));
-
-    if (!isDeleting && text === currentWord) {
-      setTimeout(() => setIsDeleting(true), 500);
-    } else if (isDeleting && text === '') {
-      setIsDeleting(false);
-      setWordIndex((current) => (current + 1) % words.length);
-    }
-  }
-
   useEffect(() => {
+    function type() {
+      const currentWord = words[wordIndex];
+      const shouldDelete = isDeleting ? 1 : -1;
+
+      setText(current => currentWord.substring(0, current.length - shouldDelete));
+
+      if (!isDeleting && text === currentWord) {
+        setTimeout(() => setIsDeleting(true), 500);
+      } else if (isDeleting && text === '') {
+        setIsDeleting(false);
+        setWordIndex((current) => (current + 1) % words.length);
+      }
+    }
+
     const timeout = setTimeout(type, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [wordIndex, isDeleting, text]);
+  }, [words, wordIndex, isDeleting, text]);
 
   return (
     <div className="container">
