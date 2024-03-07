@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { PropTypes } from 'prop-types';
 
 function Typewriter({ text, delay }) {
   const [currentText, setCurrentText] = useState('');
@@ -20,6 +21,11 @@ function Typewriter({ text, delay }) {
       <h1>{currentText}</h1>
     </div>
   );
+}
+
+Typewriter.propTypes = {
+  text: PropTypes.string.isRequired,
+  delay: PropTypes.number.isRequired,
 }
 
 export default Typewriter;
