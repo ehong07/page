@@ -34,7 +34,7 @@ function App() {
       </section>
       <hr className="linebreak" />
     </div>
-  )
+  );
 }
 
 export default App;

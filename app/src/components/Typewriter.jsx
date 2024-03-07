@@ -19,7 +19,7 @@ function Typewriter({ text, delay }) {
     <div className="container">
       <h1>{currentText}</h1>
     </div>
-  )
+  );
 }
 
 export default Typewriter;

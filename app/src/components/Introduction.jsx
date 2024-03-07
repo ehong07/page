@@ -11,7 +11,7 @@ function Introduction() {
         <span style={{ display: 'inline-block' }}><h3>&#x1F44B;</h3></span>
       </h5>
     </div>
-  )
+  );
 }
 
 export default Introduction;
