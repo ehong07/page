@@ -12,6 +12,6 @@ export const ABOUT_TEXTS = [
   'Settling in San Francisco, I embarked on a professional journey through multiple sectors of the tech industry including '
     + 'EdTech, FinTech, and HealthTech before taking on a side quest by co-founding a lubricants consultancy.',
   'I’m enthusiastic about JavaScript, the React ecosystem, full-stack development, and developer experience. In my free '
-    + 'time, you can find me pondering the fleeting nature of the golf swing, moving barbells through various planes of motion, '
-    + 'and attempting to stuff as many dumplings as humanly possible into my stomach.',
+    + 'time, you can find me pondering the artful yet fleeting nature of the golf swing, moving barbells through various planes '
+    + 'of motion, and attempting to stuff as many dumplings as humanly possible into my stomach.',
 ];
