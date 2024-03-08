@@ -5,6 +5,7 @@ function Typewriter({ words }) {
   const [wordIndex, setWordIndex] = useState(0);
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isCursorBlinking, setIsCursorBlinking] = useState(false);
 
   useEffect(() => {
     function type() {
@@ -21,13 +22,26 @@ function Typewriter({ words }) {
       }
     }
 
-    const timeout = setTimeout(type, isDeleting ? 50 : 100);
-    return () => clearTimeout(timeout);
+    const typeTimeout = setTimeout(type, isDeleting ? 50 : 100);
+    return () => clearTimeout(typeTimeout);
   }, [words, wordIndex, isDeleting, text]);
+
+  useEffect(() => {
+    const blinkTimeout = setTimeout(() => {
+      if (isCursorBlinking) {
+        document.getElementById('cursor').style.opacity = 0;
+        setIsCursorBlinking(false);
+      } else {
+        document.getElementById('cursor').style.opacity = 1;
+        setIsCursorBlinking(true);
+      }
+    }, 500);
+    return () => clearTimeout(blinkTimeout);
+  }, [isCursorBlinking]);
 
   return (
     <div className="container">
-      <h1>{text}</h1>
+      <h1>{text}<span id="cursor">|</span></h1>
     </div>
   );
 }
