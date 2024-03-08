@@ -2,20 +2,15 @@ import Picture from './components/Picture';
 import Typewriter from './components/Typewriter';
 import Introduction from './components/Introduction';
 import About from './components/About';
+import { TYPEWRITER_TEXTS } from './constants';
 import './App.css';
-
-const TEXTS = [
-  'Hello, world!',
-  'Welcome to my small slice of the internet pie!',
-  'Thanks for stopping by!',
-];
 
 function App() {
   return (
     <div className="layout">
       <section className="section">
         <Picture />
-        <Typewriter words={TEXTS} />
+        <Typewriter words={TYPEWRITER_TEXTS} />
         <Introduction />
       </section>
       <hr className="linebreak" />
