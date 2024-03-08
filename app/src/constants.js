@@ -15,3 +15,11 @@ export const ABOUT_TEXTS = [
     + 'time, you can find me pondering the artful yet fleeting nature of the golf swing, moving barbells through various planes '
     + 'of motion, and attempting to stuff as many dumplings as humanly possible into my stomach.',
 ];
+
+export const BUN_URL = 'https://bun.sh/';
+
+export const PICO_URL = 'https://picocss.com/';
+
+export const REACT_URL = 'https://react.dev/';
+
+export const VITE_URL = 'https://vitejs.dev/';
