@@ -2,6 +2,7 @@ import Picture from './components/Picture';
 import Typewriter from './components/Typewriter';
 import Introduction from './components/Introduction';
 import About from './components/About';
+import Connect from './components/Connect';
 import { TYPEWRITER_TEXTS } from './constants';
 import './App.css';
 
@@ -19,17 +20,7 @@ function App() {
       </section>
       <hr className="linebreak" />
       <section className="section">
-        <div className="container">
-          <h3 className="text">Connect</h3>
-          <p className="text">
-            GitHub:&nbsp;
-            <a target="_blank" href="https://github.com/ehong07" className="contrast">@ehong07</a>
-          </p>
-          <p className="text">
-            LinkedIn:&nbsp;
-            <a target="_blank" href="https://linkedin.com/in/easakhong" className="contrast">@easakhong</a>
-          </p>
-        </div>
+        <Connect />
       </section>
       <hr className="linebreak" />
     </div>
