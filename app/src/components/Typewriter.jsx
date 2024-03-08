@@ -13,11 +13,11 @@ function Typewriter({ words }) {
 
       setText(current => currentWord.substring(0, current.length - shouldDelete));
 
-      if (!isDeleting && text === currentWord) {
+      if (!isDeleting && text === currentWord && wordIndex < words.length - 1) {
         setTimeout(() => setIsDeleting(true), 500);
       } else if (isDeleting && text === '') {
         setIsDeleting(false);
-        setWordIndex((current) => (current + 1) % words.length);
+        setWordIndex(prevIndex => prevIndex + 1);
       }
     }
 
