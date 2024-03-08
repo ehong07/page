@@ -23,3 +23,7 @@ export const PICO_URL = 'https://picocss.com/';
 export const REACT_URL = 'https://react.dev/';
 
 export const VITE_URL = 'https://vitejs.dev/';
+
+export const MY_GITHUB_URL = 'https://github.com/ehong07';
+
+export const MY_LINKEDIN_URL = 'https://linkedin.com/in/easakhong';
