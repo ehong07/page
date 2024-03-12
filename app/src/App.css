@@ -10,3 +10,25 @@
   width: 75%;
   margin-left: 10em;
 }
+
+@media screen and (max-width: 480px) {
+  .section {
+    margin-left: 4em;
+  }
+
+  .linebreak {
+    width: 80%;
+    margin-left: 2em;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .section {
+    margin-left: 8em;
+  }
+
+  .linebreak {
+    width: 80%;
+    margin-left: 4em;
+  }
+}
