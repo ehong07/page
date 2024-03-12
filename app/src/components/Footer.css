@@ -1,3 +1,9 @@
 footer {
   margin-left: 19em;
 }
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-left: 3em;
+  }
+}
