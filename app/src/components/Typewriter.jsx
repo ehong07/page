@@ -41,7 +41,9 @@ function Typewriter({ words }) {
 
   return (
     <div className="container">
-      <h1>{text}<span id="cursor">|</span></h1>
+      <div className="text-container">
+        <h1>{text}<span id="cursor">|</span></h1>
+      </div>
     </div>
   );
 }

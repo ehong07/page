@@ -4,12 +4,12 @@ footer {
 
 @media screen and (max-width: 480px) {
   footer {
-    margin-left: 3em;
+    margin-left: 4em;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   footer {
-    margin-left: 6em;
+    margin-left: 8em;
   }
 }

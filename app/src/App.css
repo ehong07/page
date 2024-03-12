@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 480px) {
   .section {
-    margin-left: 3em;
+    margin-left: 4em;
   }
 
   .linebreak {
@@ -24,11 +24,11 @@
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .section {
-    margin-left: 6em;
+    margin-left: 8em;
   }
 
   .linebreak {
     width: 80%;
-    margin-left: 3em;
+    margin-left: 4em;
   }
 }
