@@ -16,8 +16,6 @@ export const ABOUT_TEXTS = [
     + 'of motion, and attempting to stuff as many dumplings as humanly possible into my stomach.',
 ];
 
-export const BUN_URL = 'https://bun.sh/';
-
 export const PICO_URL = 'https://picocss.com/';
 
 export const REACT_URL = 'https://react.dev/';

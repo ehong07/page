@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "bun --bun x vite",
-    "build": "bun --bun x vite build",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "bun --bun x vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@picocss/pico": "^2.0.3",
