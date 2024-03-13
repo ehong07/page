@@ -13,3 +13,9 @@ footer {
     margin-left: 8em;
   }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  footer {
+    margin-left: 14em;
+  }
+}
