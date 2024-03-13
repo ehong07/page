@@ -6,6 +6,10 @@
   color: #FFFFFF;
 }
 
+.text-container {
+  width: 75%;
+}
+
 .linebreak {
   width: 75%;
   margin-left: 10em;

@@ -1,5 +1,4 @@
 import { ABOUT_TEXTS } from '../constants';
-import './About.css';
 
 function About() {
   return (
