@@ -1,5 +1,4 @@
 import { PICO_URL, REACT_URL, VITE_URL } from '../constants';
-import './Footer.css';
 
 function Footer() {
   return (
